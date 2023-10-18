@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/MarynaShavlak/it-banda-module-2-lesson-4/issues"
   },
-  "homepage": "https://github.com/MarynaShavlak/it-banda-module-2-lesson-4#readme",
+  "homepage": "https://github.com/MarynaShavlak/it-banda-module-2-lesson-4",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
@@ -32,7 +32,12 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "jquery": "^3.7.1",
     "sass": "^1.69.4",
     "swiper": "^10.3.1"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "modern-normalize": "^2.0.0"
   }
 }
