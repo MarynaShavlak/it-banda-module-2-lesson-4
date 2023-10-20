@@ -18,7 +18,7 @@
     
     <!-- <link rel="stylesheet" href="../styles/index.scss" /> -->
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico" />
     <!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script> -->
   </head>
   <body>
@@ -290,8 +290,58 @@
       <ul class="features">
         <li class="features__item features__item--benefits">
           <div class="features__image-wrap">
-            <include src="./partials/common/benefits-pictures/subscription-picture.html"></include>
-  
+            <picture class="features__photo">
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/subscription@1x.webp 1x,
+                  ../images/benefits/tablet/subscription@2x.webp 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/webp"
+              />
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/subscription@1x.png 1x,
+                  ../images/benefits/tablet/subscription@2x.png 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/png"
+              />
+            
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/subscription@1x.webp 1x,
+                  ../images/benefits/desktop/subscription@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/webp"
+              />
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/subscription@1x.png 1x,
+                  ../images/benefits/desktop/subscription@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+            
+              <img
+                width="221"
+                height="221"
+                class="features__photo"
+                src="../images/benefits/tablet/subscription@1x.png"
+                alt="Долари та центи"
+              />
+            </picture>
+            
           </div>
           <h3 class="features__title">Бюджетна підписка</h3>
           <p class="features__desc">
@@ -302,7 +352,58 @@
   
         <li class="features__item features__item--benefits">
           <div class="features__image-wrap">
-            <include src="./partials/common/benefits-pictures/chemistry-picture.html"></include>
+            <picture class="features__photo">
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/chemistry@1x.webp 1x,
+                  ../images/benefits/tablet/chemistry@2x.webp 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/webp"
+              />
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/chemistry@1x.png 1x,
+                  ../images/benefits/tablet/chemistry@2x.png 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/png"
+              />
+            
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/chemistry@1x.webp 1x,
+                  ../images/benefits/desktop/chemistry@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/webp"
+              />
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/chemistry@1x.png 1x,
+                  ../images/benefits/desktop/chemistry@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+            
+              <img
+                width="221"
+                height="221"
+                class="features__photo"
+                src="../images/benefits/tablet/chemistry@1x.png"
+                alt="Знак безпеки"
+              />
+            </picture>
+            
           </div>
           <h3 class="features__title">Безпечна хімія</h3>
           <p class="features__desc">
@@ -313,7 +414,58 @@
   
         <li class="features__item features__item--benefits">
           <div class="features__image-wrap">
-            <include src="./partials/common/benefits-pictures/technic-picture.html"></include>
+            <picture class="features__photo">
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/technic@1x.webp 1x,
+                  ../images/benefits/tablet/technic@2x.webp 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/webp"
+              />
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/benefits/tablet/technic@1x.png 1x,
+                  ../images/benefits/tablet/technic@2x.png 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/png"
+              />
+            
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/technic@1x.webp 1x,
+                  ../images/benefits/desktop/technic@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/webp"
+              />
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/benefits/desktop/technic@1x.png 1x,
+                  ../images/benefits/desktop/technic@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+            
+              <img
+                width="221"
+                height="221"
+                class="features__photo"
+                src="../images/benefits/tablet/technic@1x.png"
+                alt="Пилосос"
+              />
+            </picture>
+            
   
           </div>
           <h3 class="features__title">Професійна техніка</h3>
@@ -326,7 +478,58 @@
         <li class="features__item features__item--benefits">
           <div class="features__icon-wrap">
             <div class="features__image-wrap">
-              <include src="./partials/common/benefits-pictures/quality-picture.html"></include>
+              <picture class="features__photo">
+                <source
+                  width="138"
+                  height="138"
+                  srcset="
+                    ../images/benefits/tablet/quality@1x.webp 1x,
+                    ../images/benefits/tablet/quality@2x.webp 2x
+                  "
+                  media="(max-width: 1439px)"
+                  type="image/webp"
+                />
+                <source
+                  width="138"
+                  height="138"
+                  srcset="
+                    ../images/benefits/tablet/quality@1x.png 1x,
+                    ../images/benefits/tablet/quality@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                  type="image/png"
+                />
+              
+                <source
+                  width="221"
+                  height="221"
+                  srcset="
+                    ../images/benefits/desktop/quality@1x.webp 1x,
+                    ../images/benefits/desktop/quality@2x.webp 2x
+                  "
+                  media="(min-width: 1440px)"
+                  type="image/webp"
+                />
+                <source
+                  width="221"
+                  height="221"
+                  srcset="
+                    ../images/benefits/desktop/quality@1x.png 1x,
+                    ../images/benefits/desktop/quality@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                />
+              
+                <img
+                  width="221"
+                  height="221"
+                  class="features__photo"
+                  src="../images/benefits/tablet/quality@1x.png"
+                  alt="Знак якості"
+                />
+              </picture>
+              
   
             </div>
           </div>
@@ -344,7 +547,7 @@
   <section class="section section--cleaning-types">
     <div class="container">
       <h2 class="section__title title">Що входить в прибирання?</h2>
-      <include src="./partials/common/month-subscr-types.html"></include>
+      <!--=include ./common/month-subscr-types.html-->
       <div class="rooms__wrapper">
         <ul class="rooms-toggle">
           <li class="rooms__item  rooms__item--current right"  id="room-1" >Кухня</li>
@@ -625,7 +828,58 @@
       <ul class="features features--cleaning">
         <li class="features__item features__item--cleaning">
           <div class="features__image-wrap">
-            <include src="./partials/common/benefits-pictures/technic-picture.html"></include>
+          <picture class="features__photo">
+            <source
+              width="138"
+              height="138"
+              srcset="
+                ../images/benefits/tablet/technic@1x.webp 1x,
+                ../images/benefits/tablet/technic@2x.webp 2x
+              "
+              media="(max-width: 1439px)"
+              type="image/webp"
+            />
+            <source
+              width="138"
+              height="138"
+              srcset="
+                ../images/benefits/tablet/technic@1x.png 1x,
+                ../images/benefits/tablet/technic@2x.png 2x
+              "
+              media="(max-width: 1439px)"
+              type="image/png"
+            />
+          
+            <source
+              width="221"
+              height="221"
+              srcset="
+                ../images/benefits/desktop/technic@1x.webp 1x,
+                ../images/benefits/desktop/technic@2x.webp 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/webp"
+            />
+            <source
+              width="221"
+              height="221"
+              srcset="
+                ../images/benefits/desktop/technic@1x.png 1x,
+                ../images/benefits/desktop/technic@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/png"
+            />
+          
+            <img
+              width="221"
+              height="221"
+              class="features__photo"
+              src="../images/benefits/tablet/technic@1x.png"
+              alt="Пилосос"
+            />
+          </picture>
+          
           </div>
           <h3 class="features__title">Техніка KARCHER</h3>
           <p class="features__desc">
@@ -636,7 +890,58 @@
         </li>
         <li class="features__item features__item--cleaning">
           <div class="features__image-wrap">
-            <include src="./partials/common/benefits-pictures/alergic-picture.html"></include>
+            <picture class="features__photo">
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/cleaning-package/tablet/alergic@1x.webp 1x,
+                  ../images/cleaning-package/tablet/alergic@2x.webp 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/webp"
+              />
+              <source
+                width="138"
+                height="138"
+                srcset="
+                  ../images/cleaning-package/tablet/alergic@1x.png 1x,
+                  ../images/cleaning-package/tablet/alergic@2x.png 2x
+                "
+                media="(max-width: 1439px)"
+                type="image/png"
+              />
+            
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/cleaning-package/desktop/alergic@1x.webp 1x,
+                  ../images/cleaning-package/desktop/alergic@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/webp"
+              />
+              <source
+                width="221"
+                height="221"
+                srcset="
+                  ../images/cleaning-package/desktop/alergic@1x.png 1x,
+                  ../images/cleaning-package/desktop/alergic@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+            
+              <img
+                width="221"
+                height="221"
+                class="features__photo"
+                src="../images/cleaning-package/desktop/alergic@1x.png"
+                alt="Миючий засіб"
+              />
+            </picture>
+            
           </div>
           <h3 class="features__title">Гіпоалергенні миючі засоби</h3>
           <p class="features__desc">
@@ -649,7 +954,58 @@
         <li class="features__item features__item--cleaning">
           <div class="features__icon-wrap">
             <div class="features__image-wrap">
-              <include src="./partials/common/benefits-pictures/quality-picture.html"></include>
+              <picture class="features__photo">
+                <source
+                  width="138"
+                  height="138"
+                  srcset="
+                    ../images/benefits/tablet/quality@1x.webp 1x,
+                    ../images/benefits/tablet/quality@2x.webp 2x
+                  "
+                  media="(max-width: 1439px)"
+                  type="image/webp"
+                />
+                <source
+                  width="138"
+                  height="138"
+                  srcset="
+                    ../images/benefits/tablet/quality@1x.png 1x,
+                    ../images/benefits/tablet/quality@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                  type="image/png"
+                />
+              
+                <source
+                  width="221"
+                  height="221"
+                  srcset="
+                    ../images/benefits/desktop/quality@1x.webp 1x,
+                    ../images/benefits/desktop/quality@2x.webp 2x
+                  "
+                  media="(min-width: 1440px)"
+                  type="image/webp"
+                />
+                <source
+                  width="221"
+                  height="221"
+                  srcset="
+                    ../images/benefits/desktop/quality@1x.png 1x,
+                    ../images/benefits/desktop/quality@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                />
+              
+                <img
+                  width="221"
+                  height="221"
+                  class="features__photo"
+                  src="../images/benefits/tablet/quality@1x.png"
+                  alt="Знак якості"
+                />
+              </picture>
+              
             </div>
           </div>
   
@@ -705,7 +1061,134 @@
       <ul class="reviews__list">
         <li class="reviews__item item-1">
           <h3 class="review__title">Міколай Ковальчук</h4>
-          <include src="./partials/common/stars-rating-list.html"></include>
+          <ul class="review__rating">
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+           
+          </ul>
           <p class="review__text">
             Дуже хороший сервіс! Клінер Анна приємна та працьовита дівчина.
             Приїхала без запізнень, швидко і якісно прибрала в моїй квартирі.
@@ -713,7 +1196,134 @@
         </li>
         <li class="reviews__item item-2">
           <h3 class="review__title">Марія Кравчук</h4>
-          <include src="./partials/common/stars-rating-list.html"></include>
+          <ul class="review__rating">
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+            <li class="rating_item">
+              <picture class="rating__icon" >
+                <source
+                width="20" height="20"
+                  srcset="
+                    ../images/reviews/tablet/star@1x.png 1x,
+                    ../images/reviews/tablet/star@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                width="26" height="26"
+                  srcset="
+                    ../images/reviews/desktop/star@1x.png 1x,
+                    ../images/reviews/desktop/star@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="rating__icon" width="26" height="26"
+                  src="../images/reviews/desktop/star@1x.png"
+                  alt="Жовта зірка"
+                />
+              </picture>
+            </li>
+           
+          </ul>
           <p class="review__text">
             Замовляла прибирання в квартиру після косметичного ремонту. Дівчата з
             Comfort Group мене просто врятували! Прибрали дуже швидко та ретельно.
@@ -723,7 +1333,134 @@
         </li>
         <li class="reviews__item item-3">
           <h3 class="review__title">Алекс Кашпор</h4>
-            <include src="./partials/common/stars-rating-list.html"></include>
+            <ul class="review__rating">
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+             
+            </ul>
           <p class="review__text">
             Оформлюю у Comfort Group вже другу місячну підписку. З моїм графком
             роботи це ідеальний варіант. Вдома завжди чисто та свіжо! Дякую за
@@ -732,7 +1469,134 @@
         </li>
         <li class="reviews__item item-4">
           <h3 class="review__title">Бронислав Левандовський</h4>
-            <include src="./partials/common/stars-rating-list.html"></include>
+            <ul class="review__rating">
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+             
+            </ul>
           <p class="review__text">
             Чудові клінери та сервіс. Не шкодую що обрав саме вас: прибрали
             ретельно та швидко.
@@ -740,7 +1604,134 @@
         </li>
         <li class="reviews__item item-5">
           <h3 class="review__title">Ян Кравчик</h4>
-            <include src="./partials/common/stars-rating-list.html"></include>
+            <ul class="review__rating">
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+             
+            </ul>
           <p class="review__text">
             Дякую за гарну роботу! <br />Ви чудово прибрали наш офіс після
             новорічного корпоративу.
@@ -748,7 +1739,134 @@
         </li>
         <li class="reviews__item item-6">
           <h3 class="review__title">Юлія Возняк</h4>
-            <include src="./partials/common/stars-rating-list.html"></include>
+            <ul class="review__rating">
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+              <li class="rating_item">
+                <picture class="rating__icon" >
+                  <source
+                  width="20" height="20"
+                    srcset="
+                      ../images/reviews/tablet/star@1x.png 1x,
+                      ../images/reviews/tablet/star@2x.png 2x
+                    "
+                    media="(max-width: 1439px)"
+                  />
+                  <source
+                  width="26" height="26"
+                    srcset="
+                      ../images/reviews/desktop/star@1x.png 1x,
+                      ../images/reviews/desktop/star@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="rating__icon" width="26" height="26"
+                    src="../images/reviews/desktop/star@1x.png"
+                    alt="Жовта зірка"
+                  />
+                </picture>
+              </li>
+             
+            </ul>
           <p class="review__text">
             Замовляла місячну підписку на прибирання для своєї бабусі. Тетяна з
             Comfort Group була дуже милою та ретельно все прибрала.
@@ -772,25 +1890,27 @@
                 <span class="blob-btn__blob"></span>
               </span>
             </span>
-          
+            
+          </a>
           <svg class="animated-btn-icon">
-                <defs>
-                  <filter id="goo-11" x="0%" y="0%" width="100%" height="100%">
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      result="blur"
-                      stdDeviation="10"
-                    ></feGaussianBlur>
-                    <feColorMatrix
-                      in="blur"
-                      type="matrix"
-                      values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                      result="goo"
-                    ></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
+            <defs>
+              <filter id="goo-11" x="0%" y="0%" width="100%" height="100%">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  result="blur"
+                  stdDeviation="10"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  type="matrix"
+                  values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                  result="goo"
+                ></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+          
         </div>
         </li>
         <li class="button-list__item">
