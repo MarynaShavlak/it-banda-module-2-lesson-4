@@ -10,12 +10,13 @@ const webp =  require('gulp-webp');
 const imagemin=  require('gulp-imagemin');
 const newer =  require('gulp-newer');
 const include =  require('gulp-include');
+const webpack =  require('webpack-stream');
+
 
 
 function pages() {
   return src('app/pages/*.html')
   .pipe(include({
-    // includePaths: 'app/partials'
     includePaths: ['app/partials']
   }))
   .pipe(dest('app'))
@@ -40,32 +41,38 @@ function styles() {
   .pipe(browserSync.stream())
 }
 
-// function images() {
-//   return src(['app/images/**/*.*', '!app/images/sprite.svg'])
-//   .pipe(newer('app/images'))
-//   .pipe(imagemin())
 
-//   .pipe(dest('app/images/src'))
+
+
+// function scripts() {
+//   return src([
+//     'app/scripts/entry-scripts/main-index.js',
+//   ])
+//   .pipe(concat('main.min.js'))
+//   .pipe(uglify())
+//   .pipe(dest('app/js'))
+//   .pipe(browserSync.stream())
 // }
 
 
 
 function scripts() {
-  return src([
-    'node_modules/swiper/swiper-bundle.js',
-    'app/js/main.js',
-
-
-    // 'app/js/*.js',
-    // '!app/js/main.min.js'
-
-
-  ])
-  .pipe(concat('main.min.js'))
-  .pipe(uglify())
-  .pipe(dest('app/js'))
-  .pipe(browserSync.stream())
+  return src(
+    './scripts/entry-scripts/*.js',
+  )
+  .pipe(webpack(require('./webpack.config.js')))
+  .pipe(dest('./js'))
+  // .pipe(uglify())
+  // .pipe(dest('app/js'))
+  // .pipe(browserSync.stream())
 }
+
+
+
+
+
+
+
 
 function watching() {
   browserSync.init({server:{
@@ -74,8 +81,7 @@ function watching() {
   watch(['app/styles/style.scss'], styles)
   // watch(['app/images/src'], images)
   watch(['app/js/main.js'], scripts)
-  watch(['app/partials/*', 'app/pages/*'], pages)
-  watch(['app/partials/*', 'app/pages/*'], pages)
+  watch(['app/partials/**/*.html', 'app/pages/*'], pages)
   watch(['app/**/*.html']).on('change', browserSync.reload) 
 }
 
