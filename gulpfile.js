@@ -143,6 +143,9 @@ exports.styles= styles;
 exports.building= building;
 exports.scripts= scripts;
 exports.watching= watching;
+exports.watching= watching;
+// exports.watching= watching;
+// exports.watching= watching;
 
 
 exports.build = series(cleanDist,building)
